@@ -17,7 +17,11 @@ def convert(char, flag):
 
 output = ""
 input = sys.argv[1].lower()
-aliasFlag = (sys.argv[2].lower() != "false")
+
+if (len(sys.argv) < 3):
+	aliasFlag = True
+else:
+	aliasFlag = (sys.argv[2].lower() != "false")
 
 for ch in input:
 	output += convert(ch, aliasFlag)
