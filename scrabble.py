@@ -8,7 +8,7 @@ def convert(char, flag):
 	elif char == ' ':
 		return "scrabble-blank"
 	elif char.isalpha():
-		if (flag and (char != 'a' and char != 'b' and char != 'o' and char != 'x')):
+		if (flag and (char != 'a' and char != 'b' and char != 'o' and char != 'x' and char != 's' and char != 'm')):
 			return ":" + char + ":"
 		else:
 			return ":scrabble-" + char + ":"
